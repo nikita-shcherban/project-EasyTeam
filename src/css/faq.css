@@ -48,6 +48,7 @@
 .faq-btn {
   border: none;
   background-color: transparent;
+  margin-left: auto;
 }
 
 .faq-question {
