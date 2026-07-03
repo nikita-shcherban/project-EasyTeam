@@ -51,8 +51,8 @@
   width: 335px;
   border: 2px solid #000;
   border-radius: 6px;
-  margin-bottom: 24px;
   font-weight: 400;
+  outline: none;
 }
 #contact-form > input {
   height: 40px;
@@ -72,6 +72,34 @@
   border: 1px solid #dcc110;
   border-radius: 6px;
   font-weight: 500;
+}
+#contact-form > input,
+#contact-form > textarea {
+  margin-bottom: 8px;
+}
+
+.error-text {
+  min-height: 15px;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #c40000;
+}
+
+#contact-form > input.is-invalid,
+#contact-form > textarea.is-invalid {
+  border-color: #c40000;
+  color: #c40000;
+}
+
+#contact-form > input.is-invalid::placeholder,
+#contact-form > textarea.is-invalid::placeholder {
+  color: #c40000;
+}
+#name-input:focus,
+#phone-input:focus,
+#message-input:focus {
+  outline: none;
+  border: 2px solid #b09a0c;
 }
 @media only screen and (min-width: 768px) {
   .contact-us-address {
@@ -94,6 +122,9 @@
     gap: 24px;
     max-width: 1312px;
     padding: 0;
+  }
+  .contact-us-title {
+    font-size: 48px;
   }
   .contact-us-content-left {
     width: 644px;
