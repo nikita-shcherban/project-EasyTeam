@@ -138,6 +138,16 @@
   margin: 0;
 }
 @media only screen and (min-width: 768px) {
+  #icon-decoration {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+  .contact-us-content-left {
+    align-items: flex-start;
+  }
+  .contact-us-text {
+    text-align: left;
+  }
   .contact-us-address {
     align-self: flex-start;
     justify-self: flex-start;
@@ -164,14 +174,6 @@
   }
   .contact-us-content-left {
     width: 644px;
-    align-items: flex-start;
-  }
-  #icon-decoration {
-    margin: 0;
-    margin-bottom: 24px;
-  }
-  .contact-us-text {
-    text-align: left;
   }
   #contact-form > input,
   #contact-form > textarea {
