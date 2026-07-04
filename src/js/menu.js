@@ -24,7 +24,8 @@ headerMenuButton.addEventListener('click', () => {
 
 header.addEventListener('click', e => {
   const isMobileMenuOpen = header.classList.contains('mobile-menu-open');
-  if (isMobileMenuOpen && e.target.classList.contains('header-nav-link')) {
+  const isMenuItemClicked = e.target.classList.contains('header-nav-link');
+  if (isMobileMenuOpen && isMenuItemClicked) {
     toggleMenu();
   }
 });

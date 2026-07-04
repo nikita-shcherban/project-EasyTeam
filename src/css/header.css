@@ -18,6 +18,20 @@
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
 }
+@media only screen and (min-width: 768px) {
+  .header-logo {
+    width: 78px;
+    height: 68.5px;
+    margin: 1.13px 0px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .header-logo {
+    width: 80.5px;
+    height: 70.68px;
+    margin: 0.03px 0px;
+  }
+}
 .header-menu-icon {
   width: 48px;
   height: 48px;
