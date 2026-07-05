@@ -1,15 +1,12 @@
 /* ===== Footer wrapper ===== */
 .footer {
-  width: 100%;
-  padding: 16px 20px 40px;
+  padding-top: 16px;
+  padding-bottom: 40px;
   background: #fbf9f1;
 }
 
 /* ===== Footer card ===== */
 .footer-card {
-  width: 100%;
-  max-width: 335px;
-  margin: 0 auto;
   background-color: #faf7e6;
   border: 2px solid #000;
   border-radius: 24px;
@@ -75,15 +72,21 @@
 }
 
 .footer-col a {
+  display: inline-block;
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
   color: #000;
   text-decoration: none;
+  padding: 4px 8px;
+  margin: -4px -8px;
+  border-radius: 6px;
+  transition: background-color 250ms ease-in-out;
 }
 
-.footer-col a:hover {
-  text-decoration: underline;
+.footer-col a:hover,
+.footer-col a:focus-visible {
+  background-color: #e0c15a;
 }
 
 .footer-menu-list {
@@ -114,10 +117,10 @@
 /* ============ TABLET (min-width: 768px) ============ */
 @media only screen and (min-width: 768px) {
   .footer {
-    padding: 24px 32px 48px;
+    padding-top: 24px;
+    padding-bottom: 48px;
   }
   .footer-card {
-    max-width: 704px;
     padding: 32px;
     flex-direction: row;
     justify-content: space-between;
@@ -149,10 +152,9 @@
 /* ============ DESKTOP (min-width: 1440px) ============ */
 @media only screen and (min-width: 1440px) {
   .footer {
-    padding: 24px 64px 64px;
+    padding-bottom: 64px;
   }
   .footer-card {
-    max-width: 1312px;
     padding: 48px;
     gap: 32px;
   }
