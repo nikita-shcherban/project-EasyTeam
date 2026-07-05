@@ -1,0 +1,165 @@
+/* ===== Footer wrapper ===== */
+.footer {
+  width: 100%;
+  padding: 16px 20px 40px;
+  background: #fbf9f1;
+}
+
+/* ===== Footer card ===== */
+.footer-card {
+  width: 100%;
+  max-width: 335px;
+  margin: 0 auto;
+  background-color: #faf7e6;
+  border: 2px solid #000;
+  border-radius: 24px;
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+
+/* ===== Left column: logo + copyright ===== */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-logo {
+  width: 206px;
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-copy {
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  color: #000;
+}
+
+/* ===== Right columns wrapper ===== */
+.footer-links-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-col-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #000;
+}
+
+/* Menu title -> first item gap */
+.footer-col--menu .footer-col-title {
+  margin-bottom: 16px;
+}
+
+/* Follow Me title -> first item gap */
+.footer-col--social .footer-col-title {
+  margin-bottom: 25.5px;
+}
+
+.footer-col a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+.footer-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-social-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.footer-social-list svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+/* ============ TABLET (min-width: 768px) ============ */
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 24px 32px 48px;
+  }
+  .footer-card {
+    max-width: 704px;
+    padding: 32px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    gap: 24px;
+  }
+  .footer-brand {
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .footer-logo {
+    width: 128px;
+  }
+  .footer-links-wrap {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 48px;
+    width: auto;
+  }
+  .footer-col {
+    align-items: flex-start;
+  }
+  .footer-social-list a {
+    justify-content: flex-start;
+  }
+}
+
+/* ============ DESKTOP (min-width: 1440px) ============ */
+@media only screen and (min-width: 1440px) {
+  .footer {
+    padding: 24px 64px 64px;
+  }
+  .footer-card {
+    max-width: 1312px;
+    padding: 48px;
+    gap: 32px;
+  }
+  .footer-logo {
+    width: 166px;
+  }
+  .footer-links-wrap {
+    gap: 96px;
+  }
+}
