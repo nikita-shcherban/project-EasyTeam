@@ -87,7 +87,9 @@ li.selected-category {
 .show-more-button {
   border: 2px solid #dcc110;
   border-radius: 6px;
-  padding: 10px 112.5px;
+  padding: 10px 0;
+  width: 100%;
+  max-width: 310px;
   background: #dcc110;
   transition: background-color 250ms ease;
   font-weight: 500;
